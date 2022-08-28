@@ -1,0 +1,344 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: inline;
+  font-family: sans-serif;
+  margin: 0;
+}
+
+h1 {
+  font-size: 4.5em;
+}
+h2 {
+  font-size: 2.7em;
+}
+h3 {
+  font-size: 2em;
+}
+p {
+  font-size: 1.25em;
+}
+ul {
+  list-style: none;
+}
+li {
+  font-size: 1.25em;
+}
+
+button {
+  font-size: 1.25em;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  color: white;
+  background-color: blueviolet;
+}
+
+button:hover {
+  background-color: rgb(101, 33, 165);
+}
+
+.container {
+  max-width: 1400px;
+  margin: auto;
+}
+
+.color-acento {
+  color: blueviolet;
+}
+header {
+  background-color: rgb(255, 255, 255);
+}
+
+header .logo {
+  margin: 0;
+  padding: 25px 30px;
+  font-weight: bold;
+  color: blueviolet;
+  font-size: 1.6em;
+}
+
+header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 25px;
+}
+
+header a {
+  padding: 5px 12px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+header a:hover {
+  color: blueviolet;
+}
+
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 90vh;
+  color: white;
+  background-image: url('../img/hero.jpeg'), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#hero h1 {
+  color: white;
+}
+
+#hero button {
+  font-size: 1.75em;
+}
+
+#somos-plash .container {
+  text-align: center;
+  padding: 50px 10px;
+}
+
+#nuestro-producto {
+  background-color: rgba(30, 30, 30);
+  color: white;
+  text-align: center;
+}
+
+#nuestro-producto .container {
+  padding: 50px 11px;
+}
+
+#nuestro-producto h2 {
+  margin-top: 0%;
+  font-size: 3.2em;
+}
+
+#nuestro-producto p {
+  display: none;
+}
+
+#nuestro-producto .carta {
+  background-position: center center;
+  background-size: cover;
+  padding: 50px 0px;
+  margin: 14px;
+  border-radius: 15px;
+}
+
+.carta:first-child {
+  background-image: url('../img/hombre.jpeg'), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+.carta:nth-child(2) {
+  background-image: url('../img/unisex.jpeg'), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+.carta:nth-child(3) {
+  background-image: url('../img/mujer.jpeg'), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+#caracteristicas .container {
+  text-align: center;
+  padding: 18px 0px;
+}
+
+#caracteristicas li {
+  margin: 16px 0px;
+  font-weight: bold;
+}
+
+#caracteristicas h2 {
+  margin-top: 0%;
+  font-size: 3.2em;
+}
+
+#contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(30, 30, 30);
+  color: white;
+  height: 80vh;
+}
+
+#contacto h2 {
+  font-size: 9vw;
+}
+
+#contacto button {
+  font-size: 5vw;
+  margin: 5px;
+}
+
+footer {
+  background-color: rgba(230, 230, 230);
+}
+
+footer p {
+  margin: 0;
+  padding: 12px;
+  color: rgba(100, 100, 100);
+}
+
+footer .container {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+@media (min-width: 720px) {
+  header {
+    position: fixed;
+    width: 100%;
+  }
+
+  header .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  header nav {
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 20px;
+  }
+
+  #hero h1 {
+    font-size: 5em;
+  }
+
+  #somos-plash .container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #somos-plash .texto {
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #somos-plash h2 {
+    margin-top: 0px;
+    text-align: center;
+  }
+
+  #somos-plash p {
+    text-align: center;
+  }
+
+  #somos-plash .img-container {
+    background-image: url('../img/quienes-somos.png');
+    background-size: cover;
+    background-position: center center;
+    height: 600px;
+    width: 500px;
+  }
+
+  #nuestro-producto .producto {
+    display: flex;
+    justify-content: center;
+  }
+
+  #nuestro-producto p {
+    display: block;
+    margin-bottom: 20px;
+    padding: 26px 6px;
+    margin: 2px;
+  }
+
+  #nuestro-producto h2 {
+    font-size: 4em;
+  }
+
+  #nuestro-producto h3 {
+    margin-top: 12vw;
+  }
+
+  #nuestro-producto .carta {
+    padding: 60px;
+    background-size: 99% 207px;
+    background-repeat: no-repeat;
+    background-position-y: 0;
+    background-color: rgba(50, 50, 50, 1);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .carta:first-child {
+    background-image: url('../img/hombre.jpeg'), linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  }
+
+  .carta:nth-child(2) {
+    background-image: url('../img/unisex.jpeg'), linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  }
+
+  .carta:nth-child(3) {
+    background-image: url('../img/mujer.jpeg'), linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  }
+
+  #caracteristicas .img-container {
+    background-image: url('../img/caracteristicas.png');
+    position: relative;
+  }
+
+  #caracteristicas .container {
+    text-align: initial;
+  }
+
+  #caracteristicas .texto {
+    text-align: center;
+  }
+
+  #contacto h2 {
+    font-size: 5em;
+  }
+
+  #contacto button {
+    font-size: 2em;
+  }
+
+  footer .container {
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width: 1200px) {
+  #caracteristicas {
+    background-position-x: calc(100vw - 600px);
+  }
+}
